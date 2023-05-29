@@ -1,0 +1,57 @@
+table{
+    /*Makes the borders touch each other*/
+    border-collapse: collapse;
+    width: 60%;
+}
+th {
+    height: 50px;
+    border: 1px solid black;
+    background-color: pink;
+    color: white;
+}
+td {
+    border: 1px solid black;
+    padding: 4px 6px;
+    text-align: center;
+}
+/* :nth-child selects only the elements matching the equation */
+tr:nth-child(2n) {
+    background-color: mistyrose;
+}
+col:nth-child(2n + 1) {
+    background-color: lavenderblush;
+}
+nav {
+    background-color: pink;
+    padding: 10px;
+    text-align: right;
+}
+nav a {
+    display: inline-block;
+    background-color: cornsilk;
+    margin: 2px;
+    padding: 8px 12px;
+    color: black;
+    text-decoration: none;
+    border-radius: 2px;
+    transition-property: background-color, transform;
+    transition-duration: 300ms;
+}
+nav a:hover{
+    background-color:darksalmon;
+    transform: translateY(-3px);
+}
+
+.message {
+    background-color: pink;
+    padding: 15px;
+    width: 25%;
+    text-align: center;
+}
+
+img[alt=profile] {
+    border-radius: 50%;
+    aspect-ratio: 1 /1; /* Makes width and height the same*/
+    object-fit: cover; /* Crops instead of squashing */
+
+}
